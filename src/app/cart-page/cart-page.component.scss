@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 1.5rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  flex: 3 0; // crescerà 3 volte più grande del checkout panel e non subirà shrink
+  justify-content: space-evenly;
+  border: 1px solid var(--bgcolor2);
+  border-radius: 1rem;
+  margin: .5rem;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--bgcolor2);
+    color: var(--secondary);
+
+    a {
+      color: var(--secondary);
+    }
+
+    &:last-child {
+      // :last-child seleziona soltanto l'ultimo child di questo selettore (li, cartItem);
+      border: none;
+    }
+
+    img {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 100rem;
+      object-fit: cover;
+    }
+
+    div {
+      padding: 1rem;
+
+      &:not(:first-child) {
+        // tutti i div dentro li eccetto il primo;
+        flex-basis: 18%;
+      }
+    }
+
+    select {
+      width: 3rem;
+      outline: none;
+      border: none;
+      border-radius: 1rem;
+      border-bottom: 1px solid var(--bgcolor2);
+      font-size: 1.1rem;
+      font-weight: 100;
+      background-color: white;
+      text-align: center;
+      color: var(--txtcolor);
+    }
+  }
+}
+
+.remove-button {
+  border-radius: 1rem;
+  border: none;
+  padding: .5rem;
+  color: var(--tertiary);
+  background-color: var(--primary);
+  opacity: .7;
+  outline: none;
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 3;
+  height: 20rem;
+  border: 1px solid var(--bgcolor2);
+  border-radius: 1rem;
+  padding: .5rem;
+  margin: .5rem;
+
+  > div {
+    font-size: 1.4rem;
+    margin: 1rem;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .foods-count {
+    margin-bottom: 1.5rem;
+
+    &::before {
+      content: 'Count: ';
+      color: grey;
+    }
+  }
+
+  .total-price::before {
+    content: 'Count: ';
+    color: grey;
+  }
+}

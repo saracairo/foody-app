@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+// =============================================
+//                GLOBAL STYLES
+// =============================================
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+    // le misure rem ed em usate nell'app faranno riferimento a quest'elemento root e saranno quindi prevedibili
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  background-color: var(--bgcolor1);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+// =============================================
+//                COLOR PALETTE
+// =============================================
+
+:root {
+  --primary: #e67a7a;
+  --secondary: grey;
+  --tertiary: #fff4e1;
+  --txtcolor: #664d51;
+  --bgcolor1: #ffebb7;
+  --bgcolor2: #eeb8b8;
+}

@@ -1,0 +1,84 @@
+// =============================================
+//                HOME STYLES
+// =============================================
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+
+  li a {
+    height: 22.5rem; // 20 * il font-size del root element
+    width: 20rem;
+    border: 1px solid var(--tertiary);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: var(--primary);
+    background-color: var(--tertiary);
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      opacity: 0.9; // 90%
+      cursor: pointer;
+      transform: translateY(-5px);
+    }
+  }
+}
+
+.content {
+  padding: .5rem 1rem;
+  position: relative;
+}
+
+.favorite {
+  position: absolute;
+  top: .5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+}
+
+.not {
+  color: grey;
+}
+
+.stars {
+  margin-bottom: .2rem;
+}
+
+.product-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.origins {
+  flex: 9;
+
+  span {
+    border-radius: 2rem;
+    background-color: var(--lightyellow);
+    padding: .2rem;
+    display: inline-block;
+    font-size: .8rem;
+    color: grey;
+    margin-right: .3rem;
+  }
+}
+
+.cook-time{
+  font-size: 1rem;
+  flex: 3;
+  text-align: right;
+}
+
+.price{
+  color:#414141;
+  margin-top: .7rem;
+}

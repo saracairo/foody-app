@@ -1,0 +1,6 @@
+<div>
+  <input type="text" placeholder="Search food" [(ngModel)]="searchTerm" (change)="search()">
+    <!-- ogni volta che cambiamo il searchTerm nel'url, l'input lo mostra e viceversa;
+      (change)="search" ha la stessa funzione del button premendo enter -->
+  <button (click)="search()">🔍</button>
+</div>

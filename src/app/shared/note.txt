@@ -1,0 +1,5 @@
+// =============================================
+//                SHARED FOLDER
+// =============================================
+
+Questa cartella contiene file condivisi da componenti e servizi.

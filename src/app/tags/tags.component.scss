@@ -1,0 +1,21 @@
+div {
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    background-color: var(--tertiary);
+    padding: .3rem 1rem;
+    margin: .2rem .15rem;
+    border-radius: 10rem;
+    font-weight: 300;
+    color: var(--primary);
+    font-size: .8rem;
+    opacity: 75%;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}

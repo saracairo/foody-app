@@ -1,0 +1,36 @@
+
+header {
+  background-color: var(--primary);
+  padding: 0;
+  border-bottom: 1px solid var(--bgcolor);
+}
+
+a {
+  color: var(--bgcolor1);
+
+  &:hover {
+    background-color: var(--bgcolor1);
+    color: var(--primary);
+  }
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+a.logo {
+  font-weight: bold;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+
+  li a {
+    padding: 1em;
+    display: inline-block;
+  }
+}

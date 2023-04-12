@@ -3,11 +3,11 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 3rem;
+  margin: 2rem;
   overflow: hidden;
 
   > * {
-    min-width: 25rem;
+    min-width: 10rem;
     max-width: 40rem;
   }
 }
@@ -16,7 +16,7 @@ img {
   border-radius: 3rem;
   flex: 1 0;
   object-fit: cover;
-  height: 30rem;
+  height: 20rem;
   margin: 1rem;
 }
 
@@ -26,7 +26,7 @@ img {
   flex-direction: column;
   flex: 1 0; // not shrink but grow
   border-radius: 3rem;
-  padding: 2rem;
+  padding: 1rem;
   margin-left: 1rem;
   color: var(--secondary);
 
@@ -41,7 +41,7 @@ img {
 
     .favorite {
       color: var(--primary);
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
 
     .not {
